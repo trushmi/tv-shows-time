@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+## About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project offers 150 most popular TV shows over the last 30 years with the highest rating on IMDb and calculates for users how much time they have spent watching these shows. 
+
+Project was made by junior software engineer Iryna Trush in order to increase awareness about how much time the person has been spending watching TV shows. 
+
+## How it works:
+
+
+By default when a user clicks on a show, the program counts the total time to watch this TV show completely( includes all episodes and all seasons). If a user doesn't recognise the show in a list, they can click on the IMDb icon on a poster and find out more. 
+
+After the user has selected the TV show, they can edit data. For example, how many times they watched TV show completely, or change the number of seasons from TV shows they have seen;  
+
+Total time is always on the screen. It updates every time the user adds or removes a show or makes changes to it. If the user wants to start over there is a reset icon for it. 
+
+Days are shown in 24 hours format. Total time can differ by 10%;
+
+To calculate the result program uses the number of seasons, how many episodes every season has and average duration of one episode. If the TV show is still running, the program calculates the number of episodes that have been shown as on January 23, 2023; 
+
+
+## Next steps
+Implement the search and implement inspiring content for users about their time and what they can do with it;
+
+## This website includes:
+
+Font: Maven Pro, Designed by Joe Prince [https://fonts.google.com/?query=Joe+Prince]
+Icons: IcoMoon-Free by Keyamoon [https://github.com/Keyamoon/IcoMoon-Free]
+Source of data and images: TVmaze.com [https://www.tvmaze.com/]
+
+## Technical stack:
+React
+SCSS
+ESLint and prettier.
+
+## How to develop
+To run the development environment you can use the npm start command. 
+To build the production version you can run npm run build command
+
 
 ## Available Scripts
 

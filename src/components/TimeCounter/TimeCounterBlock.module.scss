@@ -1,0 +1,40 @@
+@import "/src/style/variables.scss";
+.countSection {
+  display: flex;
+}
+.countBlock {
+  display: flex;
+}
+.timeContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.title {
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.figureBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.figure1 {
+  height: 60px;
+  width: 50px;
+  margin-right: 5px;
+  font-size: 50px;
+  background-color: $primary-color;
+  color: $main-color;
+  border-radius: 8px;
+  font-weight: 800;
+  @media (max-width: $breakpoint-mobile) {
+    height: 50px;
+    width: 40px;
+    font-size: 35px;
+    text-align: center;
+  }
+}

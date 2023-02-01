@@ -1,0 +1,57 @@
+@import "/src/style/variables.scss";
+
+.wrapper {
+  position: absolute;
+  border: 1px solid $primary-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 16px 24px;
+  width: 550px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 70%;
+
+  @media (max-width: $breakpoint-tablet) {
+    overflow: scroll;
+    width: 80%;
+    max-height: 70%;
+    margin: 0 auto;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 80%;
+    max-height: 70%;
+    margin: 0 auto;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: $main-color;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 21px;
+  font-weight: 900;
+}
+.closeBtn:hover {
+  background-color: transparent;
+}
+.title {
+  font-size: 70px;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 0;
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

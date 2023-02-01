@@ -1,0 +1,109 @@
+@import "/src/style/variables.scss";
+.posterContainer {
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
+  &.isSelected {
+    .overlay {
+      opacity: 1;
+    }
+    .checkCircle {
+      background-color: $selected-show-color;
+    }
+  }
+}
+.poster {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s opacity ease;
+  flex-direction: column;
+}
+.checkCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.singleShow {
+  cursor: pointer;
+  box-shadow: 0 0 10px -7px $primary-color;
+  margin: 10px;
+  width: 200px;
+  position: relative;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: calc(50% - 20px);
+  }
+}
+
+.showInfo {
+  padding: 5px 30px;
+  max-width: 300px;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 5px;
+  }
+}
+.showTitle {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 10px 0;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 10px 5px;
+  }
+}
+.showTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  width: 20%;
+  background: $brand-color;
+  @media (max-width: $breakpoint-mobile) {
+    bottom: 4px;
+  }
+}
+.imdbLink {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: $main-color;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: $brand-color;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 5px 8px;
+  opacity: 0.5;
+}
+.imdbLink:hover {
+  opacity: 1;
+}
+.imdbContainer {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

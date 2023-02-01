@@ -1,0 +1,132 @@
+@import "/src/style/variables.scss";
+.seasonWpapper {
+  position: absolute;
+  border: 1px solid $primary-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 16px 24px;
+  width: 550px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $breakpoint-mobile) {
+    width: 85%;
+    overflow: scroll;
+    max-height: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: $main-color;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 21px;
+  font-weight: 900;
+  &:hover {
+    background-color: transparent;
+  }
+}
+.selectedShowTitle {
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: 800;
+  position: relative;
+  padding: 15px 0;
+}
+.selectedShowTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  display: block;
+  height: 2px;
+  background: $brand-color;
+  width: 80%;
+}
+
+.seasonsBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seasonsFigure {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: rgb(102, 101, 101);
+  border-radius: 50%;
+  cursor: pointer;
+  color: $main-color;
+  margin: 10px;
+  opacity: 0.5;
+  .seasonsFigure:hover {
+    border: 1px solid $brand-color;
+    color: $main-color;
+    background: $brand-color;
+  }
+  &.isSelected {
+    border: 1px solid $primary-color;
+    background-color: $sub-brand-color;
+    color: $main-color;
+    opacity: 1;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 45px;
+    height: 45px;
+  }
+}
+.name {
+  font-size: 21px;
+}
+
+.selectLabel {
+  font-size: 18px;
+  margin: 10px 10px;
+}
+.seenTimesContainer {
+  margin: 10px 0px 10px 0;
+  display: flex;
+}
+
+.seenTimesNumber {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: $primary-color;
+  color: $main-color;
+  cursor: pointer;
+  border: 1px solid $primary-color;
+}
+.changeNumberBtn {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $primary-color;
+  margin: 0px;
+  height: 20px;
+  padding-left: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.checkmark {
+  color: $main-color;
+  font-size: 12px;
+  margin-left: 5px;
+}

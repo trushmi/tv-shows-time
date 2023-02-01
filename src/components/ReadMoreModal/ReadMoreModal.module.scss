@@ -1,0 +1,75 @@
+@import "/src/style/variables.scss";
+
+.seasonWpapper {
+  position: absolute;
+  border: 1px solid $primary-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 16px 24px;
+  width: 550px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 70%;
+
+  @media (max-width: $breakpoint-tablet) {
+    overflow: scroll;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: $main-color;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 21px;
+  font-weight: 900;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.title {
+  font-size: 50px;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 23%;
+    display: block;
+    height: 2px;
+    width: 50%;
+    background: $second-sub-brand-color;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 30px;
+  }
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.stepsTitle {
+  font-size: 18px;
+  margin: 10px 0px;
+  font-weight: 900;
+}

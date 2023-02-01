@@ -1,0 +1,17 @@
+@import "/src/style/variables.scss";
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 50px 0;
+  font-weight: 200;
+  line-height: 30px;
+}
+.footerLink {
+  color: $primary-color;
+  text-decoration: none;
+}
+.footerLink:hover {
+  text-decoration: underline;
+}
