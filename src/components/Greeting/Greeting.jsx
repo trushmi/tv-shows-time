@@ -22,8 +22,7 @@ export default function Greeting() {
         <div className={styles.title}>TV shows &amp; your time</div>
         <div className={styles.text}>
           Have you ever wondered how much time did you spend watching TV shows?
-          Time to find out! Here is TOP 150 popular TV shows over the years;
-          Rules are simple: you select the show - we count how much time you
+          Time to find out! Rules are simple: you select the show - we count how much time you
           spent watching it. Be prepared! Numbers may surprise you!
         </div>
         <button className={styles.readModeBtn} onClick={openModal}>

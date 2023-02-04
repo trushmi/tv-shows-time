@@ -10,7 +10,7 @@
     height: 700px;
   }
   @media (max-width: $breakpoint-mobile) {
-    height: 600px;
+    height: 530px;
   }
 }
 .blurContainer {
@@ -18,6 +18,7 @@
   position: absolute;
   inset: 0;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   @media (max-width: $breakpoint-mobile) {
     height: 540px;
@@ -48,17 +49,16 @@
   }
 }
 .text {
-  font-size: 21px;
-  width: 50%;
+  font-size: 18px;
+  width: 60%;
   line-height: 30px;
   margin: 0 auto;
   padding: 10px 0;
-
   @media (max-width: $breakpoint-mobile) {
     width: 85%;
     flex-wrap: wrap;
     line-height: normal;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 auto;
   }
   @media (max-width: $breakpoint-tablet) {

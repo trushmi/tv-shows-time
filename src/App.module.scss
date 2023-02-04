@@ -1,3 +1,25 @@
+@import "/src/style/variables.scss";
+
 .container {
   margin-top: 10px;
+}
+.showsDescription{
+  padding: 10px;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 0;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 18px;
+    padding: 0;
+  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 46%;
+  //   width: 10%;
+  //   display: block;
+  //   height: 2px;
+  //   background: $second-sub-brand-color;
+  //   margin-top: 10px;
+  // }
 }

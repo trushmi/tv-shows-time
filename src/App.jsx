@@ -23,6 +23,10 @@ function App() {
       />
       <Greeting />
       <div className={styles.container}>
+      
+      <div className={styles.showsDescription}>
+      150 popular TV shows selected for you:   
+         </div>
         <TvShowsView
           shows={shows}
           selectedTvShows={selectedTvShows}
