@@ -1,8 +1,9 @@
-import React from "react";
-import styles from "./header.module.scss";
-import TimeCounter from "../TimeCounter/TimeCounter";
-import { ImSpinner11 } from "react-icons/im";
-import { ImInfo } from "react-icons/im";
+import React from 'react'
+import styles from './header.module.scss'
+import TimeCounter from '../TimeCounter/TimeCounter'
+import { ImInfo } from 'react-icons/im'
+import { ImSpinner11 } from 'react-icons/im'
+// import { ImShare2 } from 'react-icons/im'
 
 export default function Header({
   totalMin,
@@ -11,9 +12,9 @@ export default function Header({
   setSelectedTvShows,
 }) {
   const resetData = () => {
-    setSelectedTvShows(new Map());
-    setTotalMin(0);
-  };
+    setSelectedTvShows(new Map())
+    setTotalMin(0)
+  }
   return (
     <div className={styles.container}>
       <div className={styles.total}>
@@ -27,13 +28,14 @@ export default function Header({
       </div>
       <section className={styles.selectedBlock}>
         <div className={styles.selectedShowsText}>
-          Selected:{selectedTvShows.size + "/150"}
+          Selected:{selectedTvShows.size + '/150'}
         </div>
         <ImSpinner11
           className={styles.startOverBtn}
           onClick={() => resetData()}
         />
+        {/* <ImShare2 className={styles.startOverBtn}/> */}
       </section>
     </div>
-  );
+  )
 }

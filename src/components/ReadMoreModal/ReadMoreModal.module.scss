@@ -19,9 +19,10 @@
   }
 
   @media (max-width: $breakpoint-tablet) {
-    overflow: scroll;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    border: none;
+    max-height: calc(100% - 120px);
   }
   @media (max-width: $breakpoint-mobile) {
     width: 100%;
