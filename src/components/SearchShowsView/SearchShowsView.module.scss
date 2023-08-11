@@ -1,15 +1,12 @@
 @import "/src/style/variables.scss";
-
 .showsWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  width: 100%;
 }
-
 .popularShowsTitle {
   font-size: 21px;
   margin: 50px auto;
-  font-weight: bold;
-  padding: 20px;
 }

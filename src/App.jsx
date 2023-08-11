@@ -1,42 +1,41 @@
 import React, { useState } from "react";
 
-import listOfTvShows from "./tvShowsData";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ShowsProvider } from "./ShowsContext/ShowsContext";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import TvShowsView from "./components/TvShowsView/TvShowsView";
-
 import styles from "./App.module.scss";
-import Greeting from "./components/Greeting/Greeting";
+import { useTotalMin } from "./TotalMinContext";
+import TvShowsSearch from "./components/TvShowsSearch/TvShowsSearch";
+import FAQ from "./components/FAQ/faq";
+import TvShowsView from "./components/TvShowsView/TvShowsView";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
-  const shows = listOfTvShows;
   const [selectedTvShows, setSelectedTvShows] = useState(new Map());
-  const [totalMin, setTotalMin] = useState(0);
+  const { totalMin, setTotalMin } = useTotalMin(0);
 
   return (
-    <>
-      <Header
-        totalMin={totalMin}
-        setTotalMin={setTotalMin}
-        selectedTvShows={selectedTvShows}
-        setSelectedTvShows={setSelectedTvShows}
-      />
-      <Greeting />
-      <div className={styles.container}>
-      
-      <div className={styles.showsDescription}>
-      150 popular TV shows selected for you:   
-         </div>
-        <TvShowsView
-          shows={shows}
-          selectedTvShows={selectedTvShows}
-          setSelectedTvShows={setSelectedTvShows}
+    <ShowsProvider>
+      <Router>
+        <Header
           totalMin={totalMin}
           setTotalMin={setTotalMin}
+          selectedTvShows={selectedTvShows}
+          setSelectedTvShows={setSelectedTvShows}
         />
-      </div>
-      <Footer />
-    </>
+        <div className={styles.pages}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/search" element={<TvShowsSearch />} />
+            <Route path="/tvshows155" element={<TvShowsView />} />
+            <Route path="/faq" element={<FAQ />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </ShowsProvider>
   );
 }
 

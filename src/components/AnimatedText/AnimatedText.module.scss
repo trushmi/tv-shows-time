@@ -1,0 +1,24 @@
+.animatedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  padding: 20px 0px 5px 20px;
+}
+
+.animatedText {
+  font-size: 32px;
+  font-weight: bold;
+  animation: fadeIn 2s;
+  letter-spacing: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

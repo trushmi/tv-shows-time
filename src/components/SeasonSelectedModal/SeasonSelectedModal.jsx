@@ -1,9 +1,8 @@
-import React from 'react'
-import classNames from 'classnames'
-import { CgClose } from 'react-icons/cg'
-import { ImCheckmark } from 'react-icons/im'
+import React from "react";
+import classNames from "classnames";
+import { CgClose } from "react-icons/cg";
 
-import styles from './SeasonSelectedModal.module.scss'
+import styles from "./SeasonSelectedModal.module.scss";
 
 export default function SeasonSelectedModal({
   onRequestClose,
@@ -15,11 +14,11 @@ export default function SeasonSelectedModal({
   onChangeSeason,
 }) {
   const add = () => {
-    changeSeenTimes()
-  }
+    changeSeenTimes();
+  };
   const subtract = () => {
-    changeSeenTimes(true)
-  }
+    changeSeenTimes(true);
+  };
 
   return (
     <div className={styles.seasonWpapper}>
@@ -29,6 +28,9 @@ export default function SeasonSelectedModal({
       <div className={styles.content}>
         <div className={styles.selectedShowTitle}>{title}</div>
         <div className={styles.selectLabel}>Selected seasons:</div>
+        <div className={styles.selectLabel}>
+          *Uncheck seasons you haven't seen:
+        </div>
         <div className={styles.seasonsBlock}>
           {filteredSeasons.map((season) => (
             <div
@@ -37,13 +39,13 @@ export default function SeasonSelectedModal({
                 [styles.isSelected]: selectedSeasons.has(season.name),
               })}
               onClick={() => {
-                onChangeSeason(season)
+                onChangeSeason(season);
               }}
             >
               <div className={styles.name}>{season.name}</div>
-              {selectedSeasons.has(season.name) && (
+              {/* {selectedSeasons.has(season.name) && (
                 <ImCheckmark className={styles.checkmark} />
-              )}
+              )} */}
             </div>
           ))}
         </div>
@@ -67,5 +69,5 @@ export default function SeasonSelectedModal({
         </section>
       </div>
     </div>
-  )
+  );
 }

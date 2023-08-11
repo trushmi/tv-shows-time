@@ -30,12 +30,10 @@
   font-weight: 900;
   z-index: 2;
 
-
   &:hover {
     background-color: transparent;
   }
   @media (max-width: $breakpoint-mobile) {
-
     top: 20px;
     right: 15px;
   }
@@ -46,8 +44,8 @@
   font-weight: 800;
   position: relative;
   text-align: center;
-
   padding: 15px 0;
+
   @media (max-width: $breakpoint-mobile) {
     margin-bottom: 20px;
   }
@@ -56,11 +54,11 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 25%;
   display: block;
   height: 2px;
   background: $brand-color;
-  width: 80%;
+  width: 50%;
 }
 
 .seasonsBlock {
@@ -94,6 +92,7 @@
     border: 1px solid $primary-color;
     background-color: $sub-brand-color;
     color: $main-color;
+
     opacity: 1;
   }
   @media (max-width: $breakpoint-mobile) {
@@ -146,8 +145,7 @@
   width: 40px;
   height: 40px;
   font-size: 16px;
-  color: $main-color;
-
+  color: $seen-times-btn-color;
 }
 .changeNumberBtnMinus {
   display: block;
@@ -162,7 +160,7 @@
   width: 40px;
   height: 40px;
   font-size: 16px;
-  color: $main-color;
+  color: $seen-times-btn-color;
 }
 .checkmark {
   color: $main-color;

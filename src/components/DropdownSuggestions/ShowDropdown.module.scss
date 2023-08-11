@@ -1,0 +1,47 @@
+.suggestionList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+
+  .suggestionItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+    .imageContainer {
+      flex-basis: 40%;
+      max-width: 100px;
+    }
+    img {
+      width: 100%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+    .showDetail {
+      display: flex;
+      flex-direction: column;
+    }
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      flex-basis: 60%;
+      align-self: center;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "/src/style/variables.scss";
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  min-height: 75vh;
+  justify-content: flex-start;
+}
+
+.searchBarContainer {
+  position: relative;
+  margin: 20px auto;
+  color: black;
+  width: 450px;
+  @media (max-width: $breakpoint-mobile-tv) {
+    align-items: center;
+    margin: 0 auto;
+  }
+  @media (max-width: $breakpoint-mobile-iphone) {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  .input {
+    width: 450px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 60px;
+    outline: none;
+    position: relative;
+    top: 300px;
+    transition-delay: 0.5s;
+    &:focus {
+      top: 0;
+      transition-delay: 0s;
+    }
+
+    &.staysTop {
+      top: 0;
+    }
+    transition-property: top;
+    transition-timing-function: ase-in-out;
+    transition-duration: 0.5s;
+
+    @media (max-width: $breakpoint-mobile-tv) {
+      top: 0;
+
+      &:focus {
+        top: 0;
+      }
+    }
+    @media (max-width: $breakpoint-mobile-iphone) {
+      align-items: center;
+      margin: 0 auto;
+      width: 270px;
+    }
+  }
+  .messageContainer {
+    position: relative;
+  }
+
+  .message {
+    position: absolute;
+    top: -30px;
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

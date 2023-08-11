@@ -1,0 +1,47 @@
+@import "/src/style/variables.scss";
+.wrapper {
+  padding: 20px;
+  background-color: transparent;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 75vh;
+  height: auto;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+.subHeading {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.emailLink {
+  color: #0077cc;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

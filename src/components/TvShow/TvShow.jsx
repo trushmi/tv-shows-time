@@ -24,7 +24,11 @@ export default function TvShow({
         })}
       >
         <div onClick={onToggle}>
-          <img src={img.medium} alt={title} className={styles.poster} />
+          <img
+            src={img && img.medium ? img.medium : ""}
+            alt={title}
+            className={styles.poster}
+          />
           <div className={styles.overlay}>
             <div>
               <div className={styles.checkCircle}> ✓</div>

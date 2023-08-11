@@ -1,4 +1,5 @@
 @import "/src/style/variables.scss";
+
 .posterContainer {
   justify-content: center;
   cursor: pointer;
@@ -50,16 +51,30 @@
   margin: 10px;
   width: 200px;
   position: relative;
+  animation-name: slideFromTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile-tv) {
     width: calc(50% - 20px);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .showInfo {
   padding: 5px 30px;
   max-width: 300px;
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile-tv) {
     padding: 5px;
   }
 }
@@ -68,7 +83,7 @@
   font-weight: 500;
   position: relative;
   padding: 10px 0;
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile-tv) {
     padding: 10px 5px;
   }
 }
@@ -82,7 +97,7 @@
   margin: 0 auto;
   width: 20%;
   background: $brand-color;
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile-tv) {
     bottom: 4px;
   }
 }

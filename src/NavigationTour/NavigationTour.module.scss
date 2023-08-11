@@ -1,0 +1,108 @@
+.descriptionPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  position: relative;
+  font-size: 15px;
+}
+.searchInfo {
+  position: absolute;
+  font-size: 15px;
+  top: 28px;
+  left: 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 90px;
+    background-color: yellow;
+    z-index: 900;
+  }
+}
+.tvShowInfo {
+  position: absolute;
+  top: 130px;
+  left: 140px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 190px; // the length of the line
+    background-color: yellow;
+    z-index: 900;
+  }
+}
+
+.projectInfo {
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  z-index: 900;
+  &:after {
+    @extend .createCurvedLine;
+  }
+}
+.timeInfo {
+  position: absolute;
+  top: 90px;
+  right: 450px;
+
+  &:after {
+    @extend .createCurvedLine;
+  }
+}
+
+.resetBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  &:after {
+    @extend .createCurvedLineToRight;
+  }
+}
+
+.createCurvedLine {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 120px;
+  z-index: 900;
+  background-color: yellow;
+  border-radius: 1px 0 0 0;
+  border: solid yellow;
+  border-width: 1px 0 0;
+  transform: translateX(-50%) rotate(-45deg);
+  transform-origin: bottom center;
+}
+.createCurvedLineToRight {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 1px;
+  height: 130px;
+  z-index: 900;
+  background-color: yellow;
+  border-radius: 1px 0 0 0;
+  border: solid yellow;
+  border-width: 1px 0 0;
+  left: 40%;
+  transform: translateX(0) rotate(45deg);
+  transform-origin: bottom center;
+}

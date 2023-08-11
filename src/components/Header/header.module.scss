@@ -1,69 +1,161 @@
 @import "/src/style/variables.scss";
+
 .container {
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-  top: 0;
+  height: 120px;
+  padding: 20px;
+  color: $primary-color;
+  transition: backdrop-filter 0.3s ease;
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
+  position: fixed;
   text-align: initial;
-  color: $primary-color;
-  background: $main-color;
-  box-shadow: 0 4px 4px -4px $shadow-color;
-  height: 120px;
-  padding: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
+
 .showInfoBlock {
   position: relative;
-}
-.showInfoText {
-  display: none;
-}
-.informationIcon {
-  position: relative;
-}
-.informationIcon:hover + .showInfoText {
-  display: block;
-  position: absolute;
-  width: 140px;
-  top: 15px;
-  background-color: $primary-color;
-  color: $main-color;
-  padding: 10px;
-  z-index: 3;
-  @media (max-width: $breakpoint-mobile) {
-    right: -10px;
+
+  @media (max-width: $breakpoint-mobile-iphone) {
+    position: relative;
+    top: 81px;
+    right: 119px;
+    font-size: 18px;
   }
 }
+.showInfoHide {
+  display: none;
+}
+.showInfoText {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  color: black;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 10;
+  @media (max-width: $breakpoint-mobile) {
+    left: auto;
+    right: 10px;
+  }
+}
+
+.informationIcon {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+}
+
 .total {
   display: flex;
   margin: 0 auto;
   position: relative;
 }
+
 .selectedBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   position: absolute;
-  right: 25px;
-  top: 55px;
+  right: 20px;
+
   @media (max-width: $breakpoint-mobile) {
-    left: 6%;
-    top: 95px;
+    left: 2%;
+    top: 100px;
     justify-content: center;
   }
 }
+
 .selectedShowsText {
   font-weight: bold;
   margin-right: 5px;
+
   @media (max-width: $breakpoint-mobile) {
     color: $brand-color;
   }
 }
+
 .startOverBtn {
   color: $primary-color;
   margin-left: 10px;
   font-size: 15px;
   cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: $primary-color;
+    margin: 4px 0;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+  }
+}
+
+.navBlock {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+
+    &.open {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        120deg,
+        rgba(106, 140, 214, 0.95),
+        rgba(216, 98, 102, 0.95)
+      );
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 1rem;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: $brand-color;
+  }
+}
+
+.material-icons-outlined {
+  font-size: 70px;
 }

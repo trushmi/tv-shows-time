@@ -356,10 +356,6 @@ const listOfTvShows = [
         name: 4,
         episodes: 11,
       },
-      {
-        name: 5,
-        episodes: 10,
-      },
     ],
     id: 6,
   },
@@ -500,6 +496,10 @@ const listOfTvShows = [
       {
         name: 5,
         episodes: 3,
+      },
+      {
+        name: 6,
+        episodes: 5,
       },
     ],
     id: 7,
@@ -1007,6 +1007,10 @@ const listOfTvShows = [
         name: 25,
         episodes: 6,
       },
+      {
+        name: 26,
+        episodes: 6,
+      },
     ],
     id: 24,
   },
@@ -1289,7 +1293,7 @@ const listOfTvShows = [
       },
       {
         name: 34,
-        episodes: 12,
+        episodes: 22,
       },
     ],
     id: 65,
@@ -1363,10 +1367,6 @@ const listOfTvShows = [
     seasons: [
       {
         name: 1,
-        episodes: 9,
-      },
-      {
-        name: 2,
         episodes: 9,
       },
     ],
@@ -1806,11 +1806,7 @@ const listOfTvShows = [
       },
       {
         name: 13,
-        episodes: 6,
-      },
-      {
-        name: 14,
-        episodes: 3,
+        episodes: 7,
       },
     ],
     id: 35,
@@ -3205,6 +3201,33 @@ const listOfTvShows = [
     id: 104,
   },
   {
+    title: "The Last of Us",
+    externalIds: {
+      tvrage: null,
+      thetvdb: 392256,
+      imdb: "tt3581920",
+      tvmazeId: 46562,
+    },
+    rating: "8.3",
+    status: "Running",
+    averageEpisodeRunTime: 59,
+    img: {
+      medium:
+        "https://static.tvmaze.com/uploads/images/medium_portrait/444/1110831.jpg",
+      original:
+        "https://static.tvmaze.com/uploads/images/original_untouched/444/1110831.jpg",
+    },
+    totalEpisodes: 9,
+    totalMinutes: 534,
+    seasons: [
+      {
+        name: 1,
+        episodes: 9,
+      },
+    ],
+    id: 155,
+  },
+  {
     title: "Sense8",
     externalIds: {
       tvrage: 35197,
@@ -4027,7 +4050,7 @@ const listOfTvShows = [
       },
       {
         name: 6,
-        episodes: 10,
+        episodes: 22,
       },
     ],
     id: 95,
@@ -4132,6 +4155,41 @@ const listOfTvShows = [
       },
     ],
     id: 129,
+  },
+  {
+    title: "The Witcher",
+    externalIds: {
+      tvrage: null,
+      thetvdb: 362696,
+      imdb: "tt5180504",
+      tvmazeId: 28276,
+    },
+    rating: "8.1",
+    status: "Running",
+    averageEpisodeRunTime: 58,
+    img: {
+      medium:
+        "https://static.tvmaze.com/uploads/images/medium_portrait/465/1163193.jpg",
+      original:
+        "https://static.tvmaze.com/uploads/images/original_untouched/465/1163193.jpg",
+    },
+    totalEpisodes: 24,
+    totalMinutes: 1381,
+    seasons: [
+      {
+        name: 1,
+        episodes: 8,
+      },
+      {
+        name: 2,
+        episodes: 8,
+      },
+      {
+        name: 3,
+        episodes: 8,
+      },
+    ],
+    id: 153,
   },
   {
     title: "Squid Game",
@@ -4384,12 +4442,35 @@ const listOfTvShows = [
         name: 1,
         episodes: 9,
       },
-      {
-        name: 2,
-        episodes: 9,
-      },
     ],
     id: 132,
+  },
+  {
+    title: "The Night Agent",
+    externalIds: {
+      tvrage: null,
+      thetvdb: 407281,
+      imdb: "tt13918776",
+      tvmazeId: 56512,
+    },
+    rating: "8",
+    status: "Running",
+    averageEpisodeRunTime: 49,
+    img: {
+      medium:
+        "https://static.tvmaze.com/uploads/images/medium_portrait/453/1132519.jpg",
+      original:
+        "https://static.tvmaze.com/uploads/images/original_untouched/453/1132519.jpg",
+    },
+    totalEpisodes: 10,
+    totalMinutes: 490,
+    seasons: [
+      {
+        name: 1,
+        episodes: 10,
+      },
+    ],
+    id: 154,
   },
   {
     title: "Humans",
@@ -4503,7 +4584,7 @@ const listOfTvShows = [
       },
       {
         name: 4,
-        episodes: 6,
+        episodes: 10,
       },
     ],
     id: 71,
@@ -4990,6 +5071,10 @@ const listOfTvShows = [
         name: 3,
         episodes: 10,
       },
+      {
+        name: 4,
+        episodes: 10,
+      },
     ],
     id: 110,
   },
@@ -5177,7 +5262,7 @@ const listOfTvShows = [
       },
       {
         name: 19,
-        episodes: 6,
+        episodes: 20,
       },
     ],
     id: 89,
@@ -5424,7 +5509,7 @@ const listOfTvShows = [
       },
       {
         name: 6,
-        episodes: 11,
+        episodes: 22,
       },
     ],
     id: 121,
@@ -5486,7 +5571,7 @@ const listOfTvShows = [
       },
       {
         name: 2,
-        episodes: 2,
+        episodes: 10,
       },
     ],
     id: 136,
@@ -5922,10 +6007,6 @@ const listOfTvShows = [
         name: 2,
         episodes: 8,
       },
-      {
-        name: 3,
-        episodes: 8,
-      },
     ],
     id: 119,
   },
@@ -6002,10 +6083,6 @@ const listOfTvShows = [
       },
       {
         name: 6,
-        episodes: 8,
-      },
-      {
-        name: 7,
         episodes: 8,
       },
     ],
@@ -6320,10 +6397,6 @@ const listOfTvShows = [
         name: 1,
         episodes: 8,
       },
-      {
-        name: 2,
-        episodes: 8,
-      },
     ],
     id: 118,
   },
@@ -6435,6 +6508,33 @@ const listOfTvShows = [
       },
     ],
     id: 137,
+  },
+  {
+    title: "BEEF",
+    externalIds: {
+      tvrage: null,
+      thetvdb: 399838,
+      imdb: "tt14403178",
+      tvmazeId: 54285,
+    },
+    rating: "6.8",
+    status: "Ended",
+    averageEpisodeRunTime: 35,
+    img: {
+      medium:
+        "https://static.tvmaze.com/uploads/images/medium_portrait/455/1139179.jpg",
+      original:
+        "https://static.tvmaze.com/uploads/images/original_untouched/455/1139179.jpg",
+    },
+    totalEpisodes: 10,
+    totalMinutes: 348,
+    seasons: [
+      {
+        name: 1,
+        episodes: 10,
+      },
+    ],
+    id: 151,
   },
   {
     title: "Sabrina, the Teenage Witch",
@@ -6578,6 +6678,10 @@ const listOfTvShows = [
         name: 6,
         episodes: 22,
       },
+      {
+        name: 7,
+        episodes: 18,
+      },
     ],
     id: 139,
   },
@@ -6719,6 +6823,33 @@ const listOfTvShows = [
     id: 85,
   },
   {
+    title: "Love & Death",
+    externalIds: {
+      tvrage: null,
+      thetvdb: 402181,
+      imdb: "tt14586350",
+      tvmazeId: 55085,
+    },
+    rating: "6.1",
+    status: "Ended",
+    averageEpisodeRunTime: 54,
+    img: {
+      medium:
+        "https://static.tvmaze.com/uploads/images/medium_portrait/458/1146402.jpg",
+      original:
+        "https://static.tvmaze.com/uploads/images/original_untouched/458/1146402.jpg",
+    },
+    totalEpisodes: 7,
+    totalMinutes: 379,
+    seasons: [
+      {
+        name: 1,
+        episodes: 7,
+      },
+    ],
+    id: 152,
+  },
+  {
     title: "And Just Like That...",
     externalIds: {
       tvrage: null,
@@ -6741,6 +6872,10 @@ const listOfTvShows = [
       {
         name: 1,
         episodes: 10,
+      },
+      {
+        name: 2,
+        episodes: 11,
       },
     ],
     id: 143,
