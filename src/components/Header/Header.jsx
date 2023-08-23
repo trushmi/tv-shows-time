@@ -73,7 +73,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink onClick={handleNavLinkClick} to="/tvshows155">
-              TV Shows 155
+              TOP TV Shows
             </NavLink>
           </li>
           <li>
