@@ -119,7 +119,7 @@ export default function TvShowsSearch() {
           totalMinutes += runtime;
         });
         const seenTimes = 1;
-        const averageEpisodeRunTime = totalMinutes / totalEpisodes;
+        const averageEpisodeRunTime = Math.floor(totalMinutes / totalEpisodes);
         const totalMinutesToWatchShow = totalMinutes;
 
         const tvShow = {
