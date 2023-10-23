@@ -7,7 +7,7 @@ export default function Footer() {
       <div>
         Made with ❤️ by{" "}
         <a
-          href="https://www.linkedin.com/in/mariia-iryna-trush/"
+          href="https://www.linkedin.com/in/trushmi/"
           target="blank"
           className={styles.footerLink}
         >
