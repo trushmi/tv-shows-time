@@ -20,9 +20,7 @@
 
   @media (max-width: $breakpoint-mobile-iphone) {
     position: relative;
-    top: 81px;
-    right: 119px;
-    font-size: 18px;
+    right: 15px;
   }
 }
 .showInfoHide {
@@ -35,8 +33,8 @@
   width: 150px;
   padding: 10px;
   display: flex;
-  color: black;
-  background-color: #fff;
+  color: $main-color;
+  background-color: $primary-color;
   border-radius: 4px;
   z-index: 10;
   @media (max-width: $breakpoint-mobile) {
@@ -91,7 +89,14 @@
   @media (max-width: $breakpoint-mobile) {
     font-size: 28px;
     color: $primary-color-second;
-    rotate: 20deg;
+
+    margin-left: 50px;
+  }
+  @media (max-width: $breakpoint-mobile-iphone) {
+    font-size: 28px;
+    position: absolute;
+    left: 35px;
+    color: $primary-color-second;
   }
 }
 
@@ -126,11 +131,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(
-        120deg,
-        rgba(106, 140, 214, 0.95),
-        rgba(216, 98, 102, 0.95)
-      );
+      background: $second-main-background-color;
       flex-direction: column;
       align-items: center;
       justify-content: center;
