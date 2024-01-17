@@ -8,7 +8,16 @@ $shadow-color: grey;
 $breakpoint-mobile: 1240px;
 $breakpoint-tablet: 1244px;
 $breakpoint-mobile-tv: 780px;
+$breakpoint-mobile-show: 500px;
 $breakpoint-mobile-iphone: 400px;
 $mainbackgroundColor: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+$second-main-background-color: linear-gradient(
+  120deg,
+  rgba(106, 140, 214, 0.95),
+  rgba(216, 98, 102, 0.95)
+);
+$third-main-background-color: #e5e5e5;
+$third-main-text-color: #333;
+
 $seen-times-btn-color: purple;
 $primary-color-second: white;
