@@ -171,7 +171,7 @@ export default function TvShowsSearch() {
             [styles.staysTop]: selectedListOfTvShows.length > 0 || isLoading,
           })}
           type="text"
-          placeholder="Search for shows..."
+          placeholder="Type TV show title here..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
