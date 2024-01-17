@@ -48,7 +48,7 @@
 .informationIcon {
   position: relative;
   cursor: pointer;
-  z-index: 3;
+  z-index: 2;
 }
 
 .total {
@@ -66,8 +66,8 @@
   right: 20px;
 
   @media (max-width: $breakpoint-mobile) {
-    left: 2%;
-    top: 100px;
+    left: 70%;
+    top: 60px;
     justify-content: center;
   }
 }
@@ -77,15 +77,22 @@
   margin-right: 5px;
 
   @media (max-width: $breakpoint-mobile) {
+    display: none;
     color: $brand-color;
   }
 }
 
 .startOverBtn {
-  color: $primary-color;
+  color: $primary-color-second;
   margin-left: 10px;
   font-size: 15px;
   cursor: pointer;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 28px;
+    color: $primary-color-second;
+    rotate: 20deg;
+  }
 }
 
 .hamburger {
@@ -158,4 +165,23 @@
 
 .material-icons-outlined {
   font-size: 70px;
+}
+.closeBtn {
+  display: none;
+  &:hover {
+    background-color: transparent;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+    top: 20px;
+    right: 15px;
+    position: absolute;
+
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 900;
+    z-index: 2;
+  }
 }

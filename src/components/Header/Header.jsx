@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import styles from "./header.module.scss";
 import TimeCounter from "../TimeCounter/TimeCounter";
 import { ImInfo } from "react-icons/im";
-import { ImSpinner11 } from "react-icons/im";
 import { useTotalMin } from "../../TotalMinContext";
 import { NavLink } from "react-router-dom";
+import { CgClose } from "react-icons/cg";
+import { MdRestartAlt } from "react-icons/md";
 
 export default function Header() {
   const { totalMin, setTotalMin, selectedTvShows, setSelectedTvShows } =
@@ -30,7 +31,9 @@ export default function Header() {
   const handleNavLinkClick = () => {
     setIsMenuOpen(false);
   };
-
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   useEffect(() => {
     const closeMenuOutsideClick = (event) => {
       const navBlockElement = document.querySelector(`.${styles.navBlock}`);
@@ -82,6 +85,9 @@ export default function Header() {
             </NavLink>
           </li>
         </ul>
+        <div className={styles.closeBtn} onClick={closeMenu}>
+          <CgClose />
+        </div>
       </div>
       <div className={styles.total}>
         <TimeCounter totalMinutes={totalMin} />
@@ -104,7 +110,7 @@ export default function Header() {
         <div className={styles.selectedShowsText}>
           Selected: {selectedTvShows.size}
         </div>
-        <ImSpinner11
+        <MdRestartAlt
           className={styles.startOverBtn}
           onClick={() => resetData()}
         />
