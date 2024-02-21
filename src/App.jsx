@@ -11,7 +11,7 @@ import TvShowsSearch from "./components/TvShowsSearch/TvShowsSearch";
 import FAQ from "./components/FAQ/faq";
 import TvShowsView from "./components/TvShowsView/TvShowsView";
 import HomePage from "./components/HomePage/HomePage";
-
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 function App() {
   const [selectedTvShows, setSelectedTvShows] = useState(new Map());
   const { totalMin, setTotalMin } = useTotalMin(0);
@@ -31,6 +31,7 @@ function App() {
             <Route path="/search" element={<TvShowsSearch />} />
             <Route path="/tvshows155" element={<TvShowsView />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
         <Footer />
