@@ -1,0 +1,15 @@
+.notFoundPage {
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  text-align: center;
+  .errorCode {
+    font-size: 10em;
+    margin-bottom: 0;
+  }
+  .errorMsg {
+    font-size: 1.3em;
+  }
+}
