@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "@trushmi/ui-components": "^0.0.4",
     "classnames": "^2.3.2",
     "node-sass": "^7.0.3",
     "react": "^19.1.0",
